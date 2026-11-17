@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sail to Lead · Water Sports for Youth Work</title>
+<style>
+:root{--pink:#ec709a;--yellow:#ffe497;--sky:#3dc3ff;--navy:#065a82;--bg:#fff;--ink:#065a82;--soft:#eef7fb;--line:#c9e3ef;--link:#065a82;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#062b3d;--ink:#eaf5fa;--soft:#0a3a52;--line:#14506d;--link:#3dc3ff}}
+:root[data-theme="dark"]{--bg:#062b3d;--ink:#eaf5fa;--soft:#0a3a52;--line:#14506d;--link:#3dc3ff}
+*{box-sizing:inherit}
+html{scroll-padding-top:calc(4.5rem + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cambria,Georgia,"Times New Roman",serif;font-size:1.0625rem;line-height:1.65}
+a{color:var(--link)}
+.en{display:none}
+html[lang="en"] .ua{display:none}
+html[lang="en"] .en{display:inline}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header.top{position:sticky;top:0;z-index:5;background:var(--navy);color:#fff;padding-top:env(safe-area-inset-top,0px)}
+header.top .wrap{display:flex;align-items:center;gap:1rem;min-height:3.5rem;flex-wrap:wrap}
+header.top b{font-size:1.1rem;margin-right:auto;letter-spacing:.02em}
+header.top nav{display:flex;gap:1.1rem;flex-wrap:wrap}
+header.top a{color:#fff;text-decoration:none;font-size:.95rem}
+header.top a:hover,header.top a:focus-visible{text-decoration:underline}
+.lang{display:flex;border:1.5px solid #fff;border-radius:2rem;overflow:hidden}
+.lang button{font:inherit;font-size:.85rem;background:none;color:#fff;border:0;padding:.25rem .75rem;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--yellow);color:var(--navy);font-weight:700}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.hero{background:var(--navy);color:#fff;padding:3.5rem 0 4rem}
+.hero .wrap{display:grid;gap:2.5rem;grid-template-columns:1fr}
+.stack{margin:0;font-size:clamp(2.2rem,8vw,4.2rem);line-height:1.08;font-weight:400;text-transform:uppercase;letter-spacing:.01em}
+.stack span{display:block}
+.stack .c1{color:#fff}.stack .c2{color:var(--pink)}.stack .c3{color:var(--yellow)}.stack .c4{color:var(--sky)}.stack .c5{color:#fff}
+.hero p{max-width:34rem;font-size:1.2rem;margin:0 0 1.2rem}
+.pill{display:inline-block;background:var(--yellow);color:var(--navy);border-radius:2rem;padding:.2rem .9rem;font-size:.9rem;font-weight:700}
+.btn{display:inline-block;background:var(--pink);color:#fff;font-weight:700;font-size:1.1rem;text-decoration:none;border-radius:1.1rem;padding:.8rem 1.6rem;margin-right:.6rem;margin-top:.4rem}
+.btn:hover{filter:brightness(.93)}
+.btn.alt{background:transparent;border:2px solid #fff}
+@media(min-width:52rem){.hero .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+section{padding:3.5rem 0}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;line-height:1.2;margin:0 0 .6rem}
+.lead{max-width:40rem;margin:0 0 2rem}
+.what{background:var(--pink);color:#fff;border-radius:1.6rem;padding:2rem 2.2rem;max-width:44rem}
+.what h2{color:#fff}.what p{margin:.4rem 0;font-size:1.15rem}
+.topics{list-style:none;margin:0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))}
+.topics li{background:var(--soft);border-radius:1rem;padding:1.1rem 1.3rem;border-left:.6rem solid var(--c,var(--sky))}
+.topics h3{margin:0 0 .25rem;font-size:1.2rem}
+.topics p{margin:0 0 .6rem;font-size:.98rem}
+.topics .pill{font-size:.8rem;padding:.1rem .7rem}
+.countries{display:flex;flex-wrap:wrap;gap:.7rem;margin:0 0 1rem;padding:0;list-style:none}
+.countries li{border:2px solid var(--navy);border-radius:2rem;padding:.35rem 1.1rem}
+html[data-theme="dark"] .countries li{border-color:var(--sky)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .countries li{border-color:var(--sky)}}
+.note{background:var(--yellow);color:var(--navy);border-radius:1rem;padding:1rem 1.3rem;max-width:44rem}
+.cols{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))}
+.alt-bg{background:var(--soft)}
+footer{background:var(--navy);color:#fff;padding:2.5rem 0 3rem;font-size:.92rem}
+footer a{color:var(--yellow)}
+footer .eu{font-family:Arial,Helvetica,sans-serif;font-weight:700;margin:0 0 .6rem}
+footer p{margin:.4rem 0;max-width:46rem}
+.car{margin-top:2.5rem}
+.car-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:.8rem}
+.car-head h3{margin:0;font-size:1.3rem}
+.car-btns{display:flex;gap:.5rem}
+.car-btns button{font:inherit;font-size:1.2rem;width:2.6rem;height:2.6rem;border-radius:50%;border:0;background:var(--pink);color:#fff;cursor:pointer}
+.track{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.8rem}
+.track figure{margin:0;flex:0 0 auto;scroll-snap-align:start}
+.track img{height:21rem;width:auto;max-width:86vw;object-fit:cover;border-radius:1rem;display:block}
+.track figcaption{font-size:.92rem;margin-top:.4rem}
+@media(max-width:40rem){.track img{height:16rem}}
+.logos{background:#fff;border-radius:1rem;padding:.8rem 1.2rem;display:inline-flex;gap:1.6rem;align-items:center;flex-wrap:wrap;margin:0 0 1rem}
+.logos img{height:2.6rem;width:auto;display:block}
+.cols p{max-width:46rem}
+.deck-stage{aspect-ratio:16/9;background:#000;border-radius:1rem;overflow:hidden;max-width:56rem}
+.deck-stage img{width:100%;height:100%;object-fit:contain;display:block}
+.deck-stage img[hidden]{display:none}
+.deck-langs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.8rem}
+.deck-langs button{font:inherit;font-size:.95rem;padding:.3rem 1rem;border-radius:2rem;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.deck-langs button[aria-pressed="true"]{background:var(--yellow);color:var(--navy);border-color:var(--yellow);font-weight:700}
+.deck-langs button:disabled{opacity:.65;cursor:not-allowed}
+.deck-bar{display:flex;align-items:center;gap:.8rem;margin-top:.8rem}
+.deck-bar button{font:inherit;font-size:1.1rem;min-width:2.6rem;height:2.6rem;padding:0 .9rem;border-radius:2rem;border:0;background:var(--pink);color:#fff;cursor:pointer}
+.deck-bar .ghost{font-size:.95rem;background:transparent;color:var(--ink);border:2px solid var(--line)}
+.deck-bar{flex-wrap:wrap}
+.deck-bar .dl{margin-left:auto;display:inline-block;background:var(--yellow);color:var(--navy);font-weight:700;text-decoration:none;border-radius:2rem;padding:.45rem 1.1rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <b>Sail to Lead</b>
+  <nav aria-label="Menu">
+   <a href="#topics"><span class="ua">Матеріали</span><span class="en">Materials</span></a>
+   <a href="#countries"><span class="ua">За країною</span><span class="en">By country</span></a>
+   <a href="#place"><span class="ua">Brouwersdam</span><span class="en">Brouwersdam</span></a>
+   <a href="#presentation"><span class="ua">Презентація</span><span class="en">Presentation</span></a>
+   <a href="#download"><span class="ua">Завантажити</span><span class="en">Download</span></a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language">
+   <button type="button" data-set="uk" aria-pressed="true">UA</button>
+   <button type="button" data-set="en" aria-pressed="false">EN</button>
+  </div>
+ </div>
+</header>
+
+<main>
+<div class="hero">
+ <div class="wrap">
+  <h1 class="stack" aria-label="Sail to Lead">
+   <span class="c1" aria-hidden="true">Sail to Lead</span>
+   <span class="c2" aria-hidden="true">Sail to Lead</span>
+   <span class="c3" aria-hidden="true">Sail to Lead</span>
+   <span class="c4" aria-hidden="true">Sail to Lead</span>
+   <span class="c5" aria-hidden="true">Sail to Lead</span>
+  </h1>
+  <div>
+   <p class="pill">Water Sports for Youth Work</p>
+   <p>
+    <span class="ua">Безкоштовний набір матеріалів для виховників і працівників з молоддю: як провести безпечне, інклюзивне та екологічне заняття на воді.</span>
+    <span class="en">A free toolkit for youth workers: how to run a safe, inclusive and eco-friendly activity on the water.</span>
+   </p>
+   <a class="btn" href="#topics"><span class="ua">Переглянути матеріали</span><span class="en">Browse the materials</span></a>
+   <a class="btn alt" href="#download"><span class="ua">Завантажити PDF</span><span class="en">Download the PDF</span></a>
+  </div>
+ </div>
+</div>
+
+<section>
+ <div class="wrap">
+  <div class="what">
+   <h2><span class="ua">Що таке Sail to Lead?</span><span class="en">What is Sail to Lead?</span></h2>
+   <p class="ua">Міжнародний проєкт Erasmus+ для пластунів і молодіжних працівників із Нідерландів, Іспанії, Словаччини, Польщі, України та Австрії. Вишкіл відбувся в Brouwersdam Windsurfing Center, Ouddorp. Тут зібрано все, що учасники підготували, щоб ви могли провести подібну активність у своїй країні.</p>
+   <p class="en">An Erasmus+ project for Plast scouts and youth workers from the Netherlands, Spain, Slovakia, Poland, Ukraine and Austria. The training took place at Brouwersdam Windsurfing Center, Ouddorp. This site gathers what participants prepared, so you can run a similar activity in your own country.</p>
+  </div>
+ </div>
+</section>
+
+<section id="topics" class="alt-bg">
+ <div class="wrap">
+  <h2><span class="ua">Матеріали за темами</span><span class="en">Materials by topic</span></h2>
+  <p class="lead"><span class="ua">Кожен розділ підготувала окрема робоча група. Усі матеріали будуть доступні онлайн і у форматі PDF.</span><span class="en">Each section was prepared by a separate working group. Everything will be available online and as a PDF.</span></p>
+  <ul class="topics">
+   <li style="--c:var(--navy)"><h3><span class="ua">Вступ: водні види спорту як неформальна освіта</span><span class="en">Introduction: water sports as non-formal education</span></h3><p><span class="ua">Чому вода працює як простір для навчання і лідерства.</span><span class="en">Why the water works as a space for learning and leadership.</span></p><span class="pill"><span class="ua">Незабаром</span><span class="en">Coming soon</span></span></li>
+   <li style="--c:var(--sky)"><h3><span class="ua">Методика вітрильництва</span><span class="en">Sailing methodology</span></h3><p><span class="ua">Шлях навчання початківця, структура заняття, типові помилки.</span><span class="en">A beginner’s learning path, session structure, common mistakes.</span></p><span class="pill"><span class="ua">Незабаром</span><span class="en">Coming soon</span></span></li>
+   <li style="--c:var(--pink)"><h3><span class="ua">Методика віндсерфінгу</span><span class="en">Windsurfing methodology</span></h3><p><span class="ua">Безпечна послідовність навичок, вправи та ігрові елементи.</span><span class="en">A safe progression of skills, exercises and games.</span></p><span class="pill"><span class="ua">Незабаром</span><span class="en">Coming soon</span></span></li>
+   <li style="--c:var(--yellow)"><h3><span class="ua">Безпека та управління ризиками</span><span class="en">Safety and risk management</span></h3><p><span class="ua">Перевірки перед виходом, нагляд за групою, дії при перекиданні, чекліст.</span><span class="en">Pre-launch checks, group supervision, capsize response, checklist.</span></p><span class="pill"><span class="ua">Незабаром</span><span class="en">Coming soon</span></span></li>
+   <li style="--c:var(--navy)"><h3><span class="ua">Інклюзія та рефлексія</span><span class="en">Inclusion and reflection</span></h3><p><span class="ua">Адаптації для різної підготовки, підтримка учасників з меншими можливостями, запитання для рефлексії та опис результатів у Youthpass.</span><span class="en">Adaptations for different abilities, support for participants with fewer opportunities, reflection questions and describing outcomes in Youthpass.</span></p><span class="pill"><span class="ua">Незабаром</span><span class="en">Coming soon</span></span></li>
+   <li style="--c:var(--sky)"><h3><span class="ua">Екологічна відповідальність</span><span class="en">Environmental responsibility</span></h3><p><span class="ua">Leave No Trace, поведінка біля птахів і в зонах Natura 2000, еко-чекліст.</span><span class="en">Leave No Trace, behaviour near birds and in Natura 2000 areas, eco-checklist.</span></p><span class="pill"><span class="ua">Незабаром</span><span class="en">Coming soon</span></span></li>
+   <li style="--c:var(--yellow)"><h3><span class="ua">Чеклісти, шаблони та місцеві кейси</span><span class="en">Checklists, templates and local cases</span></h3><p><span class="ua">Готові документи та приклади проведення активності в різних країнах.</span><span class="en">Ready-to-use documents and examples of activities held in different countries.</span></p><span class="pill"><span class="ua">Незабаром</span><span class="en">Coming soon</span></span></li>
+  </ul>
+ </div>
+</section>
+
+<section id="countries">
+ <div class="wrap">
+  <h2><span class="ua">Місцеві ресурси за країною</span><span class="en">Local resources by country</span></h2>
+  <p class="lead"><span class="ua">Де провести заняття, кого запитати про умови на воді, які місцеві правила врахувати. Для кожного ресурсу буде вказано дату перевірки та статус.</span><span class="en">Where to run the activity, who to ask about water conditions, which local rules apply. Each resource will show a check date and a status.</span></p>
+  <ul class="countries">
+   <li>Nederland</li><li>España</li><li>Slovensko</li><li>Polska</li><li>Україна</li><li>Österreich</li>
+  </ul>
+  <p class="note"><span class="ua">Цей розділ ще в роботі. Каталог не вважатиметься повним, доки є непідтверджені дані.</span><span class="en">This section is still in progress. The catalogue will not be called complete while unverified data remain.</span></p>
+ </div>
+</section>
+
+<section id="place" class="alt-bg">
+ <div class="wrap">
+  <div class="cols">
+  <div>
+   <h2>Brouwersdam, Zeeland</h2>
+   <p class="ua">Sail to Lead — п’ятиденний тренінг для майбутніх організаторів вітрильних і віндсерфінгових заходів. Він відбувся 13–18 вересня 2026 року в Brouwersdam Windsurfing Center неподалік Роттердама. Учасники з шести країн практикували віндсерфінг і вітрильництво на RS Zest, слухали лекцію рятувальників KNRM, працювали з морськими картами, відвідали воркшопи Sailors for Sustainability та IVN Natuureducatie, а тепер разом готують матеріали цього набору.</p>
+   <p class="en">Sail to Lead is a five-day training for future organisers of sailing and windsurfing activities. It took place on 13–18 September 2026 at Brouwersdam Windsurfing Center near Rotterdam. Participants from six countries practised windsurfing and sailing on RS Zest boats, heard a talk by KNRM rescuers, worked with nautical charts, joined workshops by Sailors for Sustainability and IVN Natuureducatie, and are now preparing the materials of this toolkit together.</p>
+  </div>
+  </div>
+  <div class="car" role="region" aria-label="Photos from the training">
+   <div class="car-head"><h3><span class="ua">Фото з вишколу</span><span class="en">Photos from the training</span></h3><div class="car-btns"><button type="button" id="prev" aria-label="Previous / Назад">&#8592;</button><button type="button" id="next" aria-label="Next / Далі">&#8594;</button></div></div>
+   <div class="track" id="track" tabindex="0"><figure><img src="assets/photos/IMG_9021.jpg" alt="" loading="lazy"><figcaption><span class="ua">Учасники на березі озера</span><span class="en">Participants by the lake</span></figcaption></figure><figure><img src="assets/photos/IMG_1077.jpg" alt="" loading="lazy"><figcaption><span class="ua">Віндсерфінг на воді</span><span class="en">Windsurfing on the water</span></figcaption></figure><figure><img src="assets/photos/IMG_4255.jpg" alt="" loading="lazy"><figcaption><span class="ua">Вітрильна практика</span><span class="en">Sailing practice</span></figcaption></figure><figure><img src="assets/photos/IMG_4264.jpg" alt="" loading="lazy"><figcaption><span class="ua">Команда на борту</span><span class="en">The crew on board</span></figcaption></figure><figure><img src="assets/photos/IMG_9039.jpg" alt="" loading="lazy"><figcaption><span class="ua">Біля рятувального човна KNRM</span><span class="en">By the KNRM rescue boat</span></figcaption></figure><figure><img src="assets/photos/IMG_7917.jpg" alt="" loading="lazy"><figcaption><span class="ua">Сесія про безпеку на воді</span><span class="en">Water safety session</span></figcaption></figure><figure><img src="assets/photos/IMG_1038.jpg" alt="" loading="lazy"><figcaption><span class="ua">Робота з морською картою</span><span class="en">Working with a nautical chart</span></figcaption></figure><figure><img src="assets/photos/IMG_4123.jpg" alt="" loading="lazy"><figcaption><span class="ua">Групова робота за столами</span><span class="en">Group work at the tables</span></figcaption></figure><figure><img src="assets/photos/IMG_1581.jpg" alt="" loading="lazy"><figcaption><span class="ua">Сесія в навчальному залі</span><span class="en">A session in the training room</span></figcaption></figure><figure><img src="assets/photos/IMG_3657.jpg" alt="" loading="lazy"><figcaption><span class="ua">Презентація для учасників</span><span class="en">A presentation for participants</span></figcaption></figure></div>
+  </div>
+ </div>
+</section>
+
+<section id="presentation">
+ <div class="wrap">
+  <h2><span class="ua">Онлайн-презентація</span><span class="en">Online presentation</span></h2>
+  <p class="lead"><span class="ua">Готова презентація про вишкіл. Учасники можуть показувати її, щоб розповісти про проєкт у своїх країнах. Оберіть мову, гортайте стрілками або клавішами ← → і завантажуйте PDF.</span><span class="en">A ready-made presentation about the training. Participants can use it to tell people about the project in their own countries. Choose a language, browse with the arrows or the ← → keys, and download the PDF.</span></p>
+  <div class="deck" role="region" aria-label="Presentation">
+   <div class="deck-langs" role="group" aria-label="Presentation language">
+    <button type="button" data-deck="uk" aria-pressed="true">Українська</button>
+    <button type="button" data-deck="en" aria-pressed="false" disabled>English <span class="soon"><span class="ua">· незабаром</span><span class="en">· soon</span></span></button>
+    <button type="button" data-deck="sk" aria-pressed="false" disabled>Slovenčina <span class="soon"><span class="ua">· незабаром</span><span class="en">· soon</span></span></button>
+   </div>
+   <div class="deck-stage" id="stage" tabindex="0"><img id="slide" src="assets/deck/uk/s-01.jpg" alt="Sail to Lead"></div>
+   <div class="deck-bar"><button type="button" id="dprev" aria-label="Previous / Назад">&#8592;</button><span id="dcount" aria-live="polite">1 / 12</span><button type="button" id="dnext" aria-label="Next / Далі">&#8594;</button><button type="button" id="dfull" class="ghost" hidden><span class="ua">На весь екран</span><span class="en">Full screen</span></button><a id="ddl" class="dl" href="downloads/Sail_to_Lead_presentation_UA.pdf" download><span class="ua">Завантажити PDF</span><span class="en">Download PDF</span></a></div>
+  </div>
+ </div>
+</section>
+
+<section id="download">
+ <div class="wrap">
+  <h2><span class="ua">Завантажити</span><span class="en">Download</span></h2>
+  <p class="lead"><span class="ua">Повний набір матеріалів одним PDF, а також окремі розділи, чеклісти та шаблони.</span><span class="en">The full toolkit as one PDF, plus separate sections, checklists and templates.</span></p>
+  <span class="pill"><span class="ua">PDF буде доступний після завершення матеріалів</span><span class="en">PDF available once the materials are final</span></span>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="logos"><img src="assets/logos/erasmus-plus.png" alt="Erasmus+ Enriching lives, opening minds"><img src="assets/logos/co-funded-eu.png" alt="Co-funded by the European Union"></div>
+  <p>Sail to Lead · 2026-1-NL02-KA153-YOU-000398282</p>
+  <p>Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the granting authority. Neither the European Union nor the granting authority can be held responsible for them.</p>
+  <p><span class="ua">Ліцензія: буде уточнена (відкрита ліцензія). Остання перевірка змісту: дата буде додана.</span><span class="en">Licence: to be confirmed (open licence). Last content review: date to be added.</span></p>
+ </div>
+</footer>
+
+<script>
+(function(){
+ var btns=document.querySelectorAll('.lang button');
+ function set(l){
+  document.documentElement.lang=l;
+  for(var i=0;i<btns.length;i++){btns[i].setAttribute('aria-pressed',btns[i].getAttribute('data-set')===l?'true':'false');}
+  try{localStorage.setItem('stl-lang',l);}catch(e){}
+ }
+ for(var i=0;i<btns.length;i++){btns[i].addEventListener('click',function(){set(this.getAttribute('data-set'));});}
+ var saved=null;try{saved=localStorage.getItem('stl-lang');}catch(e){}
+ if(saved==='en'||saved==='uk'){set(saved);}
+})();
+
+(function(){var t=document.getElementById('track');if(!t)return;
+function go(d){t.scrollBy({left:d*t.clientWidth*0.8,behavior:'smooth'});}
+document.getElementById('prev').addEventListener('click',function(){go(-1);});
+document.getElementById('next').addEventListener('click',function(){go(1);});})();
+
+(function(){
+var D={uk:{n:12,dir:'assets/deck/uk/',pdf:'downloads/Sail_to_Lead_presentation_UA.pdf',alts:["Sail to Lead", "Що таке Пласт?", "Що таке Sail to Lead?", "KNRM, нідерландська волонтерська рятувальна організація", "Воркшоп Sailors for Sustainability", "Воркшоп IVN Natuureducatie", "Віндсерфінг та яхтинг", "Фото з вишколу: вітрильництво й віндсерфінг", "Групові фото з вишколу", "Неформальні моменти вишколу", "Посилання", "Дякуємо"]},en:null,sk:null};
+var st=document.getElementById('stage');if(!st)return;
+var im=document.getElementById('slide'),c=document.getElementById('dcount'),dl=document.getElementById('ddl'),bs=document.querySelectorAll('.deck-langs button'),i=0,cur='uk';
+function pad(k,n){var s=String(k+1);while(s.length<String(n).length)s='0'+s;return s;}
+function src(d,k){return d.dir+'s-'+pad(k,d.n)+'.jpg';}
+function show(k){var d=D[cur];if(!d||k<0||k>=d.n)return;i=k;im.src=src(d,k);im.alt=(d.alts&&d.alts[k])||('Slide '+(k+1));c.textContent=(k+1)+' / '+d.n;if(k+1<d.n){new Image().src=src(d,k+1);}}
+function setDeck(l){if(!D[l])return;cur=l;dl.setAttribute('href',D[l].pdf);for(var j=0;j<bs.length;j++){bs[j].setAttribute('aria-pressed',bs[j].getAttribute('data-deck')===l?'true':'false');}show(0);}
+for(var j=0;j<bs.length;j++){(function(b){var l=b.getAttribute('data-deck');if(D[l]){b.disabled=false;var s=b.querySelector('.soon');if(s)s.remove();}b.addEventListener('click',function(){setDeck(l);});})(bs[j]);}
+document.getElementById('dprev').addEventListener('click',function(){show(i-1);});
+document.getElementById('dnext').addEventListener('click',function(){show(i+1);});
+st.addEventListener('keydown',function(e){if(e.key==='ArrowRight')show(i+1);if(e.key==='ArrowLeft')show(i-1);});
+st.addEventListener('click',function(){var d=D[cur];show(i+1<d.n?i+1:0);});
+var f=document.getElementById('dfull');
+if(document.fullscreenEnabled){f.hidden=false;f.addEventListener('click',function(){try{st.requestFullscreen();}catch(e){}});}
+})();
+</script>
+</body>
+</html>
