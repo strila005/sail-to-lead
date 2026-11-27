@@ -96,3 +96,5 @@ ul.check{list-style:none;padding-left:0}ul.check li{padding-left:1.7em;position:
 
 @page{size:A4;margin:15mm 14mm 17mm}
 @media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}body{font-size:10.5pt;line-height:1.5}article h2{font-size:15pt}article h3{font-size:12.5pt}.dochead .in{grid-template-columns:auto 1fr;gap:16px}.dochead img.badge{width:70px;height:70px}.dochead h1{font-size:20pt}.dochead .lead{font-size:10pt}.kicker{font-size:8pt}table{font-size:8.6pt}th,td{padding:5px 7px}.layout{display:block}.sitefoot{display:none}.org p{font-size:9pt}.refs{font-size:8pt}}
+.topbar .pill.alt{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7);padding:3px 12px;margin-right:8px}
+.topbar .pill.alt:hover{background:#fff;color:var(--navy)}
