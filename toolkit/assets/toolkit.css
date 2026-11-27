@@ -93,3 +93,6 @@ ul.check{list-style:none;padding-left:0}ul.check li{padding-left:1.7em;position:
 .cc{display:inline-block;margin-left:.4em;padding:1px 10px;border-radius:99px;background:var(--yellow);color:var(--navy);font-size:.6em;vertical-align:middle;letter-spacing:.08em}
 .refs{margin:.6rem 0 1rem;padding:9px 14px;border-radius:10px;background:var(--tint);font-size:.85rem;line-height:1.5;word-break:break-word}
 @media print{.org{break-inside:avoid}.orgs{display:block}.org{margin-bottom:8px}}
+
+@page{size:A4;margin:15mm 14mm 17mm}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}body{font-size:10.5pt;line-height:1.5}article h2{font-size:15pt}article h3{font-size:12.5pt}.dochead .in{grid-template-columns:auto 1fr;gap:16px}.dochead img.badge{width:70px;height:70px}.dochead h1{font-size:20pt}.dochead .lead{font-size:10pt}.kicker{font-size:8pt}table{font-size:8.6pt}th,td{padding:5px 7px}.layout{display:block}.sitefoot{display:none}.org p{font-size:9pt}.refs{font-size:8pt}}
